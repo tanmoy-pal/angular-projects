@@ -1,10 +1,10 @@
 <div *ngIf="hero">
-<h2>{{ hero.name | uppercase }} Details</h2>
-<div>id: {{ hero.id }}</div>
+<h2>{{hero.name | uppercase}} Details</h2>
+<div><span>ID: </span>{{hero.id}}</div>
+<div><span>Hero name: </span>{{hero.name}}</div>
 <div>
-  <label for="hero-name">Hero name: </label>
-  <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+<label for="hero-score">Score: </label>
+<input id="hero-name" [(ngModel)]="hero.score" placeholder="Hero score"/>
 </div>
-</div>
-
 <button type="button" (click)="goBack()">go back</button>
+</div>
