@@ -7,5 +7,5 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
-  title = 'Tour of Heros';
+  title = 'Studierende der Klasse 1';
 }

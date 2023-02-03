@@ -13,13 +13,15 @@ export class HeroService {
 
   getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
-    this.messageService.add('HeroService: fetched heroes');
+    var ts = new Date().toLocaleString();
+    this.messageService.add(`${ts}: Die Liste wurde aktualisiert.`);
     return heroes;
   }
 
   getHero(id: number): Observable<Hero> {
     const hero = HEROES.find(h => h.id === id);
-    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    var ts = new Date().toLocaleString();
+    this.messageService.add(`${ts}: Lernende mit ID=${id} geholt`);
     return of(hero);
   }
 }
