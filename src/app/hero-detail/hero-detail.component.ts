@@ -33,4 +33,11 @@ export class HeroDetailComponent implements OnInit {
     this.location.back();
   }
 
+  omit_special_char(event) {
+    var k;
+    k = event.charCode;
+    return ((k >= 48 && k <= 57) || k == 8);
+
+  }
+
 }

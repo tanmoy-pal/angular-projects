@@ -4,7 +4,7 @@
 <div><span>Hero name: </span>{{hero.name}}</div>
 <div>
 <label for="hero-score">Score: </label>
-<input id="hero-name" [(ngModel)]="hero.score" placeholder="Hero score"/>
+<input id="hero-name" [(ngModel)]="hero.score" placeholder="Hero score" maxlength="2" (keypress)="omit_special_char($event)"/>
 </div>
 <button type="button" (click)="goBack()">go back</button>
 </div>
