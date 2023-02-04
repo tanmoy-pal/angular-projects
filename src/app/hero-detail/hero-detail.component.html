@@ -1,9 +1,11 @@
 <div *ngIf="hero">
 <h2>{{hero.name | uppercase}} Details</h2>
 <div><span>ID: </span>{{hero.id}}</div>
-<div><span>Hero name: </span>{{hero.name}}</div>
+<div><span>&nbsp;</span></div>
+<div><span>Name: </span>{{hero.name}}</div>
+<div><span>&nbsp;</span></div>
 <div>
-<label for="hero-score">Score: </label>
+<label for="hero-score">Note: </label>
 <input id="hero-name" [(ngModel)]="hero.score" placeholder="Hero score" maxlength="2" (keypress)="omit_special_char($event)"/>
 </div>
 <button type="button" (click)="goBack()">Speichern &amp; Zurück</button>
